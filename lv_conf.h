@@ -40,11 +40,11 @@
 
 /* Horizontal and vertical resolution of the library.*/
 #define LV_HOR_RES          (480)
-#define LV_VER_RES          (320)
+#define LV_VER_RES          (800)
 
 /* Dot Per Inch: used to initialize default sizes. E.g. a button with width = LV_DPI / 2 -> half inch wide
  * (Not so important, you can adjust it to modify default sizes and spaces)*/
-#define LV_DPI              100
+#define LV_DPI              187
 
 /* Enable anti-aliasing (lines, and radiuses will be smoothed) */
 #define LV_ANTIALIAS        1       /*1: Enable anti-aliasing*/
@@ -179,27 +179,30 @@
 /* More info about fonts: https://docs.littlevgl.com/#Fonts
  * To enable a built-in font use 1,2,4 or 8 values
  * which will determine the bit-per-pixel. Higher value means smoother fonts */
-#define USE_LV_FONT_DEJAVU_10              4
-#define USE_LV_FONT_DEJAVU_10_LATIN_SUP    4
-#define USE_LV_FONT_DEJAVU_10_CYRILLIC     4
-#define USE_LV_FONT_SYMBOL_10              4
+#define USE_LV_FONT_DEJAVU_10              0
+#define USE_LV_FONT_DEJAVU_10_LATIN_SUP    0
+#define USE_LV_FONT_DEJAVU_10_CYRILLIC     0
+#define USE_LV_FONT_SYMBOL_10              0
 
-#define USE_LV_FONT_DEJAVU_20              4
-#define USE_LV_FONT_DEJAVU_20_LATIN_SUP    4
-#define USE_LV_FONT_DEJAVU_20_CYRILLIC     4
-#define USE_LV_FONT_SYMBOL_20              4
+#define USE_LV_FONT_DEJAVU_20              0
+#define USE_LV_FONT_DEJAVU_20_LATIN_SUP    0
+#define USE_LV_FONT_DEJAVU_20_CYRILLIC     0
+#define USE_LV_FONT_SYMBOL_20              1
 
-#define USE_LV_FONT_DEJAVU_30              4
-#define USE_LV_FONT_DEJAVU_30_LATIN_SUP    4
-#define USE_LV_FONT_DEJAVU_30_CYRILLIC     4
-#define USE_LV_FONT_SYMBOL_30              4
+#define USE_LV_FONT_DEJAVU_30              0
+#define USE_LV_FONT_DEJAVU_30_LATIN_SUP    0
+#define USE_LV_FONT_DEJAVU_30_CYRILLIC     0
+#define USE_LV_FONT_SYMBOL_30              0
 
-#define USE_LV_FONT_DEJAVU_40              4
-#define USE_LV_FONT_DEJAVU_40_LATIN_SUP    4
-#define USE_LV_FONT_DEJAVU_40_CYRILLIC     4
-#define USE_LV_FONT_SYMBOL_40              4
+#define USE_LV_FONT_DEJAVU_40              0
+#define USE_LV_FONT_DEJAVU_40_LATIN_SUP    0
+#define USE_LV_FONT_DEJAVU_40_CYRILLIC     0
+#define USE_LV_FONT_SYMBOL_40              0
 
-#define USE_LV_FONT_MONOSPACE_8            1
+#define USE_LV_FONT_MONOSPACE_8            0
+
+#define USE_LV_FONT_SANS_SERIF_20          1
+#define USE_LV_FONT_SANS_SERIF_40          0
 
 /* Optionally declare your custom fonts here.
  * You can use these fonts as default font too
@@ -210,7 +213,8 @@
 #define LV_FONT_CUSTOM_DECLARE
 
 
-#define LV_FONT_DEFAULT        &lv_font_dejavu_20     /*Always set a default font from the built-in fonts*/
+// #define LV_FONT_DEFAULT        &lv_font_dejavu_20     /*Always set a default font from the built-in fonts*/
+#define LV_FONT_DEFAULT        &sans_serif_20     /*Always set a default font from the built-in fonts*/
 
 /*===================
  *  LV_OBJ SETTINGS

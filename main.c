@@ -16,7 +16,9 @@
 #include "lv_drivers/indev/mouse.h"
 #include "lv_drivers/indev/mousewheel.h"
 #include "lv_drivers/indev/keyboard.h"
-#include "lv_examples/lv_apps/demo/demo.h"
+// #include "lv_examples/lv_apps/demo/gp_ui.h"
+#include "lv_examples/lv_apps/gp/gp_ui.h"
+#include "lv_examples/lv_apps/gp/screens.h"
 #include "lv_examples/lv_apps/benchmark/benchmark.h"
 #include "lv_examples/lv_tests/lv_test.h"
 
@@ -67,7 +69,8 @@ int main(int argc, char ** argv)
     hal_init();
 
     /*Load a demo*/
-    demo_create();
+    ui_init();
+    // sysmon_create();
 
     /*Try the benchmark to see how fast your GUI is*/
 //    benchmark_create();

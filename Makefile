@@ -8,7 +8,7 @@ LVGL_DIR = ${shell pwd}
 
 CFLAGS += -O3 -g3 -I$(LVGL_DIR)/
 LDFLAGS += -lSDL2 -lm
-BIN = demo
+BIN = gp
 
 
 #Collect the files to compile
